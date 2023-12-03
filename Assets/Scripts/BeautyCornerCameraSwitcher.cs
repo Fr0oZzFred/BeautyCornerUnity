@@ -24,6 +24,7 @@ public class BeautyCornerCameraSwitcher : MonoBehaviour {
 
 
     private void OnValidate() {
+        if (cameras.Count <= 0) return;
         ChangeCam();
     }
     private IEnumerator Start() {
@@ -42,7 +43,7 @@ public class BeautyCornerCameraSwitcher : MonoBehaviour {
 
     public void ChangeCam() {
         foreach (var cam in cameras) {
-            if (!cam.IsValid) return;
+            if (cam == null || !cam.IsValid) return;
             cam.Priority = 0;
         }
         cameras[CurrentCameraIndex].Priority = 1;

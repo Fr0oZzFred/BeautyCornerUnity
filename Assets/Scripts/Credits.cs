@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public struct ArtistInfo {
@@ -18,6 +19,8 @@ public class Credits : MonoBehaviour {
     BeautyCornerCameraSwitcher cameraSwitcher;
 
     [Header("Artists")]
+    [SerializeField] PlayableDirector barDirector;
+    [SerializeField] PlayableDirector MainMenuButtonDirector;
     [SerializeField] float textFadeTime = 1.0f;
     [SerializeField] float textFadeSteps = 10.0f;
     [SerializeField] List<ArtistInfo> artistsInfos;
@@ -35,9 +38,10 @@ public class Credits : MonoBehaviour {
                 continue;
             }
 
-            artistsText[i].gameObject.SetActive(true);
             artistsText[i].SetText(artistsInfos[i].name);
             artistsText[i].gameObject.name = artistsInfos[i].name;
+
+            artistsText[i].transform.parent.gameObject.SetActive(true);
             artistsText[i].transform.parent.gameObject.name = artistsInfos[i].name + "Button";
             artistsText[i].transform.parent.GetComponent<Button>().interactable = artistsInfos[i].portfolioURL.Length != 0;
         }
@@ -77,9 +81,17 @@ public class Credits : MonoBehaviour {
                 yield return new WaitForSeconds(waitTime);
             }
         }
+        barDirector.Play();
+        yield return new WaitForSeconds((float)barDirector.duration);
+        MainMenuButtonDirector.Play();
+
     }
 
     public void OpenPortfolio(int ArtistIndex) {
         Application.OpenURL(artistsInfos[ArtistIndex].portfolioURL);
+    }
+
+    public void LoadMainMenu() {
+        SceneManager.LoadScene(0);
     }
 }

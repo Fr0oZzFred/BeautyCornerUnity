@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Main.unity
+    guid: 5c5874dcd785e144f8e79c41f69c4e89
+  - enabled: 1
+    path: Assets/HAE_BlenderProjects/Garage/Garage.unity
+    guid: 810ad390d2e7cac41acff0dc126ae28c
+  - enabled: 1
+    path: Assets/HAE_BlenderProjects/Theater/Theater.unity
+    guid: 5669bcd40bedbfe49bd48fd86c73902e
   m_configObjects: {}
