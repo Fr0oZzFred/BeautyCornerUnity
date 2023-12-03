@@ -13,6 +13,9 @@ public class BeautyCornerCameraSwitcherEditor : Editor {
         //Switch Timer
         serializedObject.Update();
         EditorGUILayout.PropertyField(serializedObject.FindProperty("switchTimer"));
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("freeCam"));
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("camMovementSpeed"));
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("camRotationSpeed"));
         serializedObject.ApplyModifiedProperties();
 
         CameraSelector(myTarget);

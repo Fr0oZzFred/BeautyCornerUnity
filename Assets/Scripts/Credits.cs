@@ -96,4 +96,21 @@ public class Credits : MonoBehaviour {
     public void LoadMainMenu() {
         SceneManager.LoadScene(0);
     }
+
+    public void PrevCamera() {
+        cameraSwitcher.SetCurrentCam(cameraSwitcher.CurrentCameraIndex - 1);
+        sliderDirector.time = sliderDirector.initialTime;
+    }
+    public void NextCamera() {
+        cameraSwitcher.SetCurrentCam(cameraSwitcher.CurrentCameraIndex + 1);
+        sliderDirector.time = sliderDirector.initialTime;
+    }
+    public void FreeCamera() {
+        if (cameraSwitcher.ToogleFreeCam()) {
+            sliderDirector.Pause();
+        } else {
+            sliderDirector.time = sliderDirector.initialTime;
+            sliderDirector.Play();
+        }
+    }
 }
