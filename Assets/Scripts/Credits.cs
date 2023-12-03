@@ -72,6 +72,8 @@ public class Credits : MonoBehaviour {
         float waitTime = textFadeTime / textFadeSteps;
         float fadeRatio = (1.0f / textFadeTime) * waitTime;
         foreach (var t in artistsText) {
+            if (!t.transform.parent.gameObject.activeInHierarchy) continue;
+
             float alpha = 0;
             Image button = t.transform.parent.GetComponent<Image>();
             while (alpha < 1) {

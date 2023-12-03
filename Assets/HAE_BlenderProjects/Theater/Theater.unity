@@ -934,10 +934,30 @@ PrefabInstance:
       propertyPath: m_text
       value: Quentin BB
       objectReference: {fileID: 0}
+    - target: {fileID: 2740400238212108223, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740400238212108223, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740400238212108223, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740400238212108223, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2804543255644643793, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
         type: 3}
       propertyPath: m_Name
-      value: Cesbarre Yannick / Eranahh
+      value: Eranahh
       objectReference: {fileID: 0}
     - target: {fileID: 2990431446847754889, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
         type: 3}
@@ -953,6 +973,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Quentin BB
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698480151385662591, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698480151385662591, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698480151385662591, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698480151385662591, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3711013127928088737, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
         type: 3}
@@ -979,10 +1019,15 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4819695266300436669, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5622379911309447180, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
         type: 3}
       propertyPath: m_Name
-      value: Cesbarre Yannick / EranahhButton
+      value: EranahhButton
       objectReference: {fileID: 0}
     - target: {fileID: 5924254000663412700, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
         type: 3}
@@ -992,7 +1037,7 @@ PrefabInstance:
     - target: {fileID: 5924254000663412700, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
         type: 3}
       propertyPath: artistsInfos.Array.data[0].name
-      value: Cesbarre Yannick / Eranahh
+      value: Eranahh
       objectReference: {fileID: 0}
     - target: {fileID: 5924254000663412700, guid: 0c82298b2ef14e6438d9c73aeb0821d7,
         type: 3}
