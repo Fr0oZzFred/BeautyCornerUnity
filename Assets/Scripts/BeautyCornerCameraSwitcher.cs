@@ -6,7 +6,7 @@ using System.Collections;
 public class BeautyCornerCameraSwitcher : MonoBehaviour {
     [SerializeField] CinemachineVirtualCamera freeCam;
     [SerializeField] float camMovementSpeed = 10.0f;
-    [SerializeField] float camRotationSpeed = 30.0f;
+    [SerializeField] float camRotationSpeed = 200.0f;
     bool playerInFreeCam;
 
     [SerializeField]
@@ -63,7 +63,7 @@ public class BeautyCornerCameraSwitcher : MonoBehaviour {
             if (cam == null || !cam.IsValid) return;
             cam.Priority = 0;
         }
-        freeCam.Priority = 0;
+        if (freeCam) freeCam.Priority = 0;
         cameras[CurrentCameraIndex].Priority = 1;
     }
     public bool ToogleFreeCam() {
