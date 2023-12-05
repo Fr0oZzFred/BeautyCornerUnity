@@ -62,6 +62,11 @@ public class Credits : MonoBehaviour {
         cameraSwitcher.OnCameraChanged += OnCamChanged;
         OnCamChanged();
     }
+
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.H)) 
+            this.gameObject.GetComponent<Canvas>().enabled = !this.gameObject.GetComponent<Canvas>().enabled;
+    }
     void OnCamChanged() {
         camerasText.SetText(cameraSwitcher.CurrentCameraIndex + 1 + "/" + cameraSwitcher.CameraCount);
     }
